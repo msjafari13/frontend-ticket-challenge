@@ -1,0 +1,1 @@
+// this component will show sections in stage + seats

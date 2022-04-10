@@ -1,14 +1,14 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import style from './App.module.scss';
+import Stadium from "./pages/Stadium/Stadium";
 
 function App() {
   return (
     <div className={style.App}>
-      <h1>Welcome</h1>
       <Routes>
-        {/* <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} /> */}
+        <Route path="/" element={<Stadium />} />
+        {/* <Route path="about" element={<About />} /> */}
       </Routes>      
     </div>
   );

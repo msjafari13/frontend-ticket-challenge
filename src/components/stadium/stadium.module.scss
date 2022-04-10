@@ -1,0 +1,70 @@
+.stadiumContainer{
+    .topStageContainer{
+        width: 100%;
+        height: auto;
+        margin-top: 16px;
+        .rowConatiner{
+            display: flex;
+            justify-content: center;
+            .section{
+                width: 24px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                background-color: lightgray;
+                border-radius: 2px;
+                margin: 2px;
+                font-size: 9px;
+                cursor: pointer;
+                &:hover{
+                    background-color: darkgray;
+                }
+            }
+        }
+    }
+    .leftAndRightStageContainer{
+        width: calc(100% - 64px);
+        max-height: 170px;
+        display: flex;
+        justify-content: center;
+        margin: 0px 32px;
+        .rightStageContainer{
+            display: flex;
+            .rowConatiner{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                
+                .section{
+                    width: 24px;
+                    height: 16px;
+                    line-height: 16px;
+                    text-align: center;
+                    background-color: lightgray;
+                    border-radius: 2px;
+                    margin: 2px;
+                    font-size: 10px;
+                    &:hover{
+                        background-color: darkgray;
+                    }
+                }
+            }
+        }
+        .courtContainer{
+            height: auto;
+            margin: auto 0px;
+            img{
+                width: 100%;
+                max-width: 260px;
+            }
+        }
+        .leftStageContainer{
+            @extend .rightStageContainer;
+        }
+    }
+    .bottomStageContainer{
+        @extend .topStageContainer;
+        margin-top: unset;
+        margin-bottom: 16px;
+    }
+}
